@@ -1,0 +1,22 @@
+<div class="main">
+  <!--
+    <app-card 
+    [title]="posts[0].title"
+    [imageUrl]="posts[0].imageUrl"
+    [username]="posts[0].username"
+    [content]="posts[0].content"
+    ></app-card>
+
+    Normalde bundan 3 kere posts[0,1,2] diye yapacaktık
+    ancak ngFor ile yaparsak
+  -->
+
+  <app-card *ngFor="let post of posts"
+  
+  [title]="post.title"
+    [imageUrl]="post.imageUrl"
+    [username]="post.username"
+    [content]="post.content"
+    ></app-card>
+  
+</div>
